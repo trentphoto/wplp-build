@@ -11,7 +11,7 @@ const PageWrapper = (props) => {
   return (
     <React.Fragment>
       <TopNav />
-      <LogoSection page={window.location.pathname} />
+      <LogoSection pageSlug={window.location.pathname} />
       <MainNav />
       { props.loading ? <Loader /> : props.children }
       <Footer />

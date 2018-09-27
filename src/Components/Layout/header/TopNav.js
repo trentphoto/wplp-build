@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { searchOn, searchOff } from '../../../actions/searchActions'
 
 import { connect } from 'react-redux'
 
 // import SearchBar from './SearchBar'
 
 class TopNav extends React.Component {
+  searchToggle = () => {
+    this.props.searchActive ? this.props.searchOff() : this.props.searchOn()
+  }
   render() {
     const { pages } = this.props;
 
@@ -26,6 +31,11 @@ class TopNav extends React.Component {
                 </li>
               ))
             }
+            <li>
+              <div className="text-light" onClick={this.searchToggle}>
+                <FontAwesomeIcon icon="search" />
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -38,7 +48,8 @@ TopNav.propTypes = {
 }
 
 const mapStateToProps = (state) => ({
-  pages: state.page.pages
+  pages: state.page.pages,
+  searchActive: state.search.searchActive
 })
 
-export default connect(mapStateToProps)(TopNav)
+export default connect(mapStateToProps, { searchOn, searchOff })(TopNav)

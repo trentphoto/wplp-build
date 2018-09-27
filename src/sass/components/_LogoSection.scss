@@ -1,0 +1,12 @@
+.LogoSectionSearch {
+  input {
+    border: none;
+    border-bottom: 1px solid $dark;
+    background-color: transparent;
+    font-size: 40px;
+    &:focus {
+      outline: none;
+
+    }
+  }
+}

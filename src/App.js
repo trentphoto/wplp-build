@@ -37,7 +37,7 @@ const App = ({ location }) => {
     return (
       <div className="App">
       <TransitionGroup>
-        <PageTransition key={location.key}>
+        <PageTransition key={window.location.key}>
           <div>
             <FetchData />
             <Switch>

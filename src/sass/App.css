@@ -6512,6 +6512,14 @@ button.close {
       background-color: #8d0518;
       box-shadow: none; }
 
+.LogoSectionSearch input {
+  border: none;
+  border-bottom: 1px solid #333333;
+  background-color: transparent;
+  font-size: 40px; }
+  .LogoSectionSearch input:focus {
+    outline: none; }
+
 .hero {
   background-image: url("https://source.unsplash.com/QCjC1KpA4nA/1921x1080");
   background-size: cover;
