@@ -1,0 +1,12 @@
+.singlePost {
+  &__image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 3rem;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+}

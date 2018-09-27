@@ -1,0 +1,31 @@
+@import "bootstrap/bootstrap.scss";
+
+@import "layout/blog-grid";
+@import "layout/content";
+
+@import "components/MainNavLoader";
+@import "components/Loader";
+@import "components/SearchBar";
+@import "components/TopNav";
+@import "components/hero";
+@import "components/section";
+@import "components/overlay";
+@import "components/PostCard";
+@import "components/PostCard_feature";
+@import "components/singlePost";
+@import "components/Footer";
+
+@import "animation";
+
+.contact__icon {
+  font-size: 60px;
+  color: $primary;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}

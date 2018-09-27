@@ -1,0 +1,8 @@
+.blog-grid {
+  display: grid;
+  margin: 0 auto;
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  };
+}

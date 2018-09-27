@@ -1,0 +1,29 @@
+@mixin abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fadeTranslate-enter {
+  @include abs;
+  // opacity: 0;
+  // transform: scale(.95);
+}
+
+.fadeTranslate-enter.fadeTranslate-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: .3s ease-in-out all;
+  // transition-delay: .3s;
+}
+.fadeTranslate-exit {
+  @include abs;
+  transform: scale(1);
+  opacity: 1;
+}
+.fadeTranslate-exit.fadeTranslate-exit-active {
+  // transform: scale(.95);
+  // opacity: 0;
+  transition: .3s ease-in-out all;
+}

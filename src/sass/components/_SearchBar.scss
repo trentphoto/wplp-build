@@ -1,0 +1,27 @@
+.SearchBar {
+  background-color: $primary;
+  margin: 0 .5rem;
+  &:focus {
+  }
+  .input-group-text {
+    // padding-right: 0;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    &:hover {
+      color: rgba(255, 255, 255, .75);
+      cursor: pointer;
+    }
+  }
+  input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    &:focus {
+      color: white;
+      border: none;
+      background-color: darken($primary, 5%);
+      box-shadow: none;
+    }
+  }
+}
